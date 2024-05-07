@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """ Module Doc """
+from typing import Tuple, Union
 
 
-def to_kv(k: str, v: int | float) -> float:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """ Function Doc """
-    value: tuple[str, int | float] = (k, v**2)
-    return value
+    return k, v**2
